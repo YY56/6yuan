@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>六院</title>
+	<link rel="stylesheet" href="static/css/font-awesome.css">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/easyui.css">
+	<link rel="stylesheet" href="static/css/demo.css">
+
+	<script src="static/js/jquery-3.2.1.min.js"></script>
+	<script src="static/js/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<div class="content-wrapper">
+		<div class="content">
+			<div class="nav-wrapper clearfix">
+				<ui class="nav">
+					<li class="item" id="layer-ctrl">图层控制</li>
+					<li class="item" id="ways">演示方案</li>
+				</ui>
+				<ul class="tool-bar">
+					<div class="group">
+						<li class="item" title="距离测量"><i class="fa fa-home"></i></li>
+						<li class="item" title="面积测量"><i class="fa fa-pie-chart"></i></li>
+						<li class="item" title="方位测量"><i class="fa fa-road"></i></li>
+					</div>
+					<div class="group">
+						<li class="item"><i class="fa fa-paw"></i></li>
+						<li class="item"><i class="fa fa-bar-chart"></i></li>
+					</div>
+				</ul>
+			</div>
+			<div class="container-wrapper">
+				<div class="tree-wrapper">
+					<div class="title">
+						<h4>图层</h4>
+						<i class="fa fa-close"></i>
+					</div>
+					<ul id="tree"></ul>
+				</div>
+				<div class="treegrid-wrapper">
+					<div class="title">
+						<h4>演示</h4>
+						<i class="fa fa-close"></i>
+					</div>
+					<table id="treegrid" style="width:600px;height:400px"></table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="static/js/demo.js"></script>
+</body>
+</html>
