@@ -13,20 +13,23 @@
 	/*width: 100px;*/
 	padding: 4px 8px;
 	font-size: 14px;
-	color: #fff;
-	cursor: pointer;
 	font-weight: lighter;
 	border-right: 1px solid #eee;
+	color: #fff;
+	cursor: pointer;
+	background-color: #1484c5;
 }
 .content .tool-bar{
+	float: right;
 	height: 14px;
-	margin: 2px 10px 0 0;
+	margin: 2px 100px 0 0;
 }
 .content .tool-bar .group{
 	float: left;
 	border: 1px solid #4f5458;
 	border-radius: 6px;
 	margin-left: 10px;
+	background-color: #4f5458;
 }
 .content .tool-bar .item{
 	float: left;
