@@ -59,6 +59,10 @@
 	border: 1px solid #d7d7d7;
 	width: 220px;
 	z-index: 100;
+
+}
+.container-wrapper #tree{
+	overflow: auto;
 }
 .container-wrapper .tree-wrapper .title{
 	width: 220px;
@@ -84,6 +88,8 @@
 	border-color: #ddd;
 }
 .container-wrapper .treegrid-wrapper{
+	position: absolute;
+	top: 0;
 	width: 100%;
 	display: none;
 
@@ -91,12 +97,12 @@
 .container-wrapper .treegrid-wrapper .title{
 	width: 100%;
 	font-size: 14px;
+	border: 1px solid #f7f7f7;
 }
 .container-wrapper .treegrid-wrapper .title h4{
 	display: inline-block;
 	padding-left: 10px;
 	color: #555;
-	font-size: 16px;
 	font-size: 14px;
 
 	

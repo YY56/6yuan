@@ -5,5 +5,6 @@
   {"id":2,"parentId":1,"leaf":0,"text":"图层组一","dateStr":"2017-09-03","state":"closed"},
   {"id":3,"parentId":1,"leaf":0,"text":"图层组二","dateStr":"2017-03-06"},
   {"id":4,"parentId":2,"leaf":1,"text":"图层1","dateStr":"2017-01-06","layerh1":111,"layerq1":111,"layerh2":112,"layerq2":112},
-  {"id":5,"parentId":2,"leaf":1,"text":"图层2","dateStr":"2017-09-09","layerh1":111,"layerq1":111,"layerh2":112,"layerq2":112,"layerh3":112,"layerq3":112}
+  {"id":5,"parentId":2,"leaf":1,"text":"图层2","dateStr":"2017-09-09","layerh1":111,"layerq1":111,"layerh2":112,"layerq2":112,"layerh3":112,"layerq3":112},
+  {"id":6,"parentId":2,"leaf":1,"text":"图层2","dateStr":"2017-09-09","layerh1":111,"layerq1":111,"layerh2":112,"layerq2":112,"layerh3":112,"layerq3":112}
 ]

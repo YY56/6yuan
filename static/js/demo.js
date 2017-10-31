@@ -38,14 +38,14 @@ $(function () {
 	}
 	tree.init = function (data) {  //初始化树形结构
 		$('#layer-ctrl').on('click', function() {
-			$('.container-wrapper').height(WINDOW_HEIGHT - 32)
 			$('.tree-wrapper').height(WINDOW_HEIGHT - 32)
 			$('.tree-wrapper').show()
 			$('.treegrid-wrapper').hide()
-
+			$('#tree').height(WINDOW_HEIGHT - 32 -20)
 			$('#tree').tree({ 
 			    data: [data],
 			    checkbox: true,
+
 			    onDblClick(row) {
 			    	console.log(row)
 			    }
@@ -62,26 +62,28 @@ $(function () {
 	treegrid.data = null; //简单表数据初始化
 	treegrid.init = function (data) { //初始化简单表
 		$('#ways').on('click', function() {
-			var _width = WINDOW_WIDTH/5
-			$('.treegrid-wrapper').show()
+			var _width = WINDOW_WIDTH/15
+			$('.treegrid-wrapper').show().width(WINDOW_WIDTH/3-2)
+
 			$('.tree-wrapper').hide()
 
 			$('#treegrid').treegrid({
 			    url: 'static/treegrid_data.json', 
 			    method: 'get', 
 			    idField:'id',
-			    treeField:'text',
-			    width: WINDOW_WIDTH,
-			    height: WINDOW_HEIGHT -30 -20,
+			    // treeField:'text',
+			    width: WINDOW_WIDTH / 3,
+			    height: WINDOW_HEIGHT -30 -20 -2,
 			    columns:[[
-					{title:'脚本名称',field:'text',width:_width},
+					{title:'脚本名称',field:'text',width:_width + 20},
 					{title:'脚本描述',field:'dec',width:_width},
-					{title:'时长（h）',field:'time',width:_width},
-					{title:'制作人',field:'person',width:_width -8},
+					{title:'时长(ms)',field:'time',width:_width - 10},
+					{title:'制作人',field:'person',width:_width - 10},
 					{title:'日期',field:'dateStr',width:_width}
 			    ]],
 			    onDblClickRow(row) {
 			    	console.log(row)
+			    	$('.treegrid-wrapper').hide()
 			    }
 			});
 		})
